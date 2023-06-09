@@ -49,3 +49,23 @@ function checkSpeed(km) {
     }
 }
 console.log(checkSpeed(185));
+
+// even odd numbers
+showNumber(10);
+function showNumber(limit) {
+    for (i = 0; i <= limit; i++) {
+        let result = i % 2 == 0 ? 'even' : 'odd';
+        console.log(i, result);
+    }
+}
+
+// count truthy
+let array = [0, 1, 2, 3, '', undefined, 'm'];
+function countTruthy(array) {
+    let count = 0;
+    for (const i of array) {
+        if (i) count++;
+    }
+    return count;
+}
+console.log(countTruthy(array));
