@@ -124,3 +124,13 @@ function calcGrade(marks) {
     }
 }
 console.log(calcGrade(marks));
+
+// show stars
+function showStar(row) {
+    let star = '*';
+    for (let i = 0; i < row; i++) {
+        console.log(star);
+        star += '*';
+    }
+}
+showStar(5)
