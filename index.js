@@ -15,3 +15,23 @@ function max(a, b) {
 }
 console.log(max(4, 3));
 
+// is landscape
+function isLandscape(width, height) {
+    return width > height;
+}
+console.log(isLandscape(300, 300));
+
+// Fizzbuzz
+function fizzBuzz(input) {
+    if (typeof input !== "number") {
+        return 'Not a number';
+    }
+    let result = input;
+    let fizz = input % 3 === 0 ? 'Fizz' : '';
+    let buzz = input % 5 === 0 ? 'Buzz' : '';
+    if (fizz + buzz !== '') {
+        result = fizz + buzz;
+    }
+    return result;
+}
+console.log(fizzBuzz(10));
