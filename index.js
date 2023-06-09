@@ -35,3 +35,17 @@ function fizzBuzz(input) {
     return result;
 }
 console.log(fizzBuzz(10));
+
+// Demerit points
+function checkSpeed(km) {
+    const speedLimit = 70;
+    km = Math.floor(km)
+    if (km <= speedLimit + 4) {
+        return 'OK'
+    } else if (km >= 180) {
+        return 'license suspended'
+    } else {
+        return 'point ' + Math.floor((km - speedLimit) / 5);
+    }
+}
+console.log(checkSpeed(185));
