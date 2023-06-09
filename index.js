@@ -87,3 +87,16 @@ function showProperties(obj) {
 }
 
 // Sum of Multiples of 3 & 5
+sum(30)
+function sum(limit) {
+    let result = 0;
+    let gap = 2;
+    for (let i = 3; i <= limit; i += 3) {
+        result += i;
+        if ((i + gap) <= limit) {
+            result += i + gap;
+            gap += 2;
+        }
+    }
+    console.log(result);
+}
