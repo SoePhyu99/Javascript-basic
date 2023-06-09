@@ -69,3 +69,21 @@ function countTruthy(array) {
     return count;
 }
 console.log(countTruthy(array));
+
+// String properties
+let movie = {
+    title: 'GOTC',
+    releaseDate: 2018,
+    director: 'James Gunn',
+    ratings: 8.2
+};
+showProperties(movie)
+function showProperties(obj) {
+    for (const set in obj) {
+        if (typeof obj[set] === "string") {
+            console.log(set, ':', obj[set]);
+        }
+    }
+}
+
+// Sum of Multiples of 3 & 5
