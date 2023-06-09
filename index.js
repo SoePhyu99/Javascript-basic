@@ -134,3 +134,26 @@ function showStar(row) {
     }
 }
 showStar(5)
+
+// prime numbers
+function prime(limit) {
+    for (let i = 2; i < limit; i++) {
+        let divide = Math.floor(i / 2);
+        let prime = 0;
+        if (divide === 0 || divide === 1) {
+            console.log(i)
+        }
+        for (let j = 2; j <= divide; j++) {
+            if (i % j !== 0) {
+                prime = i;
+            } else {
+                prime = 0;
+                break;
+            }
+        }
+        if (prime === i) {
+            console.log(i);
+        }
+    }
+}
+prime(100)
