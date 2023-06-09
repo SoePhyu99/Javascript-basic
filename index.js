@@ -100,3 +100,27 @@ function sum(limit) {
     }
     console.log(result);
 }
+
+// Grade
+let marks = [100, 100, 50, 80];
+function calcGrade(marks) {
+    let sum = 0;
+    const countSubject = marks.length;
+    for (let mark of marks) {
+        sum += mark;
+    }
+    const average = sum / countSubject;
+    console.log(sum, average)
+    if (average < 60) {
+        return 'F'
+    } else if (average < 70) {
+        return 'D'
+    } else if (average < 80) {
+        return 'C'
+    } else if (average < 90) {
+        return 'B'
+    } else {
+        return 'A'
+    }
+}
+console.log(calcGrade(marks));
