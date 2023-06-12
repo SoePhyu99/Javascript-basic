@@ -37,10 +37,12 @@ console.log(another)
 
 // Exercises
 
-function Adress(street, city, zipCode) {
-    this.street = street
-    this.city = city
-    this.zipCode = zipCode
+const adress = {
+    street: 'RoseMary',
+    city: 'New York',
+    zipCode: 10001
 }
-const showAdress = new Adress('RoseMary', 'New York', 10001)
-console.log({ ...showAdress });
+function showAdress(adress) {
+    for (let key in adress) console.log(key, adress[key]);
+}
+showAdress(adress)
