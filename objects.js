@@ -110,3 +110,13 @@ function Blog(title, body, author) {
     this.comments = [];
     this.isLive = false;
 }
+
+// Price range
+function priceRange(title, from, to) {
+    return {
+        title,
+        from,
+        to
+    }
+}
+let prices = [priceRange('Inexpensive', 0, 10), priceRange('Moderate', 11, 20), priceRange('Pricey', 21, 30)]
