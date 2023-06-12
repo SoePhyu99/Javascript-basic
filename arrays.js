@@ -124,3 +124,24 @@ function move(array, element, offset) {
     }
     return output;
 }
+
+// Exercises - Count occurrences
+const current = [1, 2, 3, 4, 5, 1, 2, 3, 2, 1]
+const count = countOccurrences(current, 1)
+console.log(count);
+
+function countOccurrences(array, searchElement) {
+    // let count = 0;
+    // for (let e of array) {
+    //     if (e === searchElement) {
+    //         count++;
+    //     }
+    // }
+    // return count;
+
+    // reduce() method
+    return array.reduce((accumulator, current) => {
+        if (current === searchElement) accumulator++;
+        return accumulator
+    }, 0);
+}
