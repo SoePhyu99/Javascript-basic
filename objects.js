@@ -36,13 +36,25 @@ let another = {}
 console.log(another)
 
 // Exercises
-
+// Address Object
 const adress = {
     street: 'RoseMary',
     city: 'New York',
     zipCode: 10001
 }
-function showAdress(adress) {
-    for (let key in adress) console.log(key, adress[key]);
+
+// factory function
+function createAdress(street, city, zipCode) {
+    return {
+        street,
+        city,
+        zipCode
+    }
 }
-showAdress(adress)
+
+// constructor function
+function Adress(street, city, zipCode) {
+    this.street = street
+    this.city = city
+    this.zipCode = zipCode
+}
