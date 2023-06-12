@@ -67,3 +67,14 @@ function arrayFromRange(min, max) {
     }
     return arr;
 }
+
+// Exercises - includes()
+const includeArray = [1, 2, 3, 4]
+console.log(includes(includeArray, 3));
+
+function includes(array, searchElement) {
+    for (let element of array) {
+        if (element === searchElement) return true;
+    }
+    return false;
+}
