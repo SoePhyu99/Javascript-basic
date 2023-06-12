@@ -78,3 +78,21 @@ function includes(array, searchElement) {
     }
     return false;
 }
+
+// Exercises - except()
+const exceptArray = [1, 2, 3, 4, 1, 2, 3]
+const output = except(exceptArray, [1, 2])
+console.log(output);
+
+function except(arr, numbers) {
+    let array = arr.slice();
+    for (let n of numbers) {
+        for (let number of array) {
+            if (number === n) {
+                console.log(array.indexOf(number));
+                array.splice(array.indexOf(number), 1)
+            }
+        }
+    }
+    return array;
+}
