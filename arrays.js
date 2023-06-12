@@ -50,3 +50,8 @@ const combine = [{ ...first }, { ...second }]
 
 // const slice = combine.slice()
 const copy = [{ ...combine }]
+
+// Joining arrays
+const joined = second.join(',')
+const slice = second.slice()
+console.log(slice);
