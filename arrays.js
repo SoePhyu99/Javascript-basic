@@ -45,7 +45,8 @@ console.log(arr);
 const first = [{ id: 1 }]
 const second = [4, 5, 6]
 
-const combine = first.concat(second)
-const slice = combine.slice()
-console.log(combine);
-console.log(slice);
+// const combine = first.concat(second)
+const combine = [{ ...first }, { ...second }]
+
+// const slice = combine.slice()
+const copy = [{ ...combine }]
