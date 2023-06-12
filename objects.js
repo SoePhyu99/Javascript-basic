@@ -8,9 +8,6 @@ function createCycle(radius) {
     }
 }
 
-let cycle1 = createCycle(1)
-cycle1.draw()
-
 // Constructor Functions
 function Cycle(radius) {
     this.radius = radius;
@@ -18,5 +15,14 @@ function Cycle(radius) {
         console.log('draw');
     }
 }
-let cycle = new Cycle(1)
-console.log(cycle.radius);
+
+// Dynamic Nature of Objects
+const cycle = {
+    radius: 1
+}
+cycle.color = 'red'
+cycle.draw = function () {
+    console.log('draw');
+}
+delete cycle.draw
+delete cycle.color
