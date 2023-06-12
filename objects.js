@@ -84,23 +84,19 @@ console.log(areSame(adress1, adress2));
 
 // Blog Post Object
 const blog = {
-    title: 'Lorem',
-    body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam purus risus, aliquet eu aliquet porta, laoreet vel massa. In pellentesque leo tortor, vitae luctus neque fermentum et. Sed ut sollicitudin lectus, et posuere augue. Aliquam et tempor orci, non commodo nibh. Duis tortor nisl, varius id diam at, vehicula accumsan massa. Aliquam sed arcu quis eros mattis porta mattis ac elit. Maecenas placerat aliquet finibus. Fusce accumsan lorem sed risus tincidunt finibus. Aliquam convallis dolor sed mollis suscipit. Proin vel lorem quis est pharetra ultrices ac nec sem.',
-    author: 'Cicero',
-    views: '200k',
-    comments: {
-        author: 'John',
-        body: 'I like lorem paragraph. Its very useful.'
-    },
-    isLive: false
+    title: 'a',
+    body: 'b',
+    author: 'c',
+    views: 20,
+    comments: [
+        {
+            author: 'a',
+            body: 'z'
+        },
+        {
+            author: 'b',
+            body: 'z'
+        }
+    ],
+    isLive: true
 }
-
-const blogPost = `${blog.title} by ${blog.author}
-
-    ${blog.body}
-Seen by - ${blog.views}
-Comments
-${blog.comments.author}
-    ${blog.comments.body}
-${blog.isLive == true ? 'Live' : 'Lived'}`;
-console.log(blogPost)
