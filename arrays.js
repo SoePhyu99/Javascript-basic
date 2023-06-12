@@ -96,3 +96,31 @@ function except(arr, numbers) {
     }
     return array;
 }
+
+// Exercises - moving an element
+const elements = [1, 2, 3, 4, 5]
+const moveResult = move(elements, 1, 4)
+console.log(moveResult);
+
+function move(array, element, offset) {
+    let output = [];
+
+    offset = array.indexOf(element) + offset;
+    if (offset >= array.length || offset < 0) {
+        console.error('Invalid offset!')
+        return output;
+    }
+
+    output[offset] = element;
+    let index = 0;
+    for (let i = 0; i < array.length; i++) {
+        if (array[i] === element) {
+            continue;
+        }
+        if (index === offset) {
+            index++;
+        }
+        output[index++] = array[i]
+    }
+    return output;
+}
