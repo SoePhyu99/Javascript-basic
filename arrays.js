@@ -55,3 +55,15 @@ const copy = [{ ...combine }]
 const joined = second.join(',')
 const slice = second.slice()
 console.log(slice);
+
+// Exercises - Array from Range
+const numbers = arrayFromRange(-14, -6);
+console.log(numbers);
+
+function arrayFromRange(min, max) {
+    const arr = [];
+    for (let i = min; i <= max; i++) {
+        arr.push(i);
+    }
+    return arr;
+}
