@@ -7,3 +7,15 @@ arr.unshift(1, 2)
 arr.splice(2, 0, 'a')
 
 console.log(arr);
+
+// finding elements(reference type)
+const courses = [
+    { id: 1, name: 'a' },
+    { id: 2, name: 'b' }
+];
+
+let course = courses.find(function (course) {
+    return course.id == 2;
+})
+
+console.log(course);
