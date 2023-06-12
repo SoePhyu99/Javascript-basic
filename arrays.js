@@ -145,3 +145,15 @@ function countOccurrences(array, searchElement) {
         return accumulator
     }, 0);
 }
+
+// Exercises - getMax()
+const nums = [10, 2, 3, 4, 5]
+const max = getMax(nums)
+console.log(max);
+
+function getMax(array) {
+    return array.reduce((accumulator, current) => {
+        if (current > accumulator) accumulator = current;
+        return accumulator;
+    }, 0)
+}
