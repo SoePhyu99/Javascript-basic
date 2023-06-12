@@ -25,4 +25,12 @@ cycle.draw = function () {
     console.log('draw');
 }
 delete cycle.draw
-delete cycle.color
+
+// Cloning an Object
+let another = {}
+// for (const key in cycle) {
+//     another[key] = cycle[key]
+// }
+// Object.assign(another, cycle)
+// another = { ...cycle }
+console.log(another)
