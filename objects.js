@@ -1,12 +1,12 @@
-const cycle = {
-    radius: 1,
-    location: {
-        x: 1,
-        y: 1
-    },
-    isVisible: true,
-    draw: function (name) {
-        console.log(this[name]);
+// Factory functions
+function createCycle(radius) {
+    return {
+        radius,
+        draw() {
+            console.log('draw')
+        }
     }
 }
-cycle.draw('isVisible')
+
+let cycle1 = createCycle(1)
+cycle1.draw()
