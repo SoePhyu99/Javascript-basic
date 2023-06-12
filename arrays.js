@@ -1,4 +1,4 @@
-const arr = [3, 4];
+let arr = [3, 4];
 // end
 arr.push(5, 6)
 // beginning
@@ -26,4 +26,17 @@ console.log(first);
 // middle
 arr.splice(1, 2)
 
+// Emptying an array
+// solution - 1
+// arr = [];
+
+// s 2
+arr.length = 0;
+
+// s 3
+// arr.splice(0, arr.length)
+
+// s 4
+// while (arr.length > 0)
+//     arr.pop()
 console.log(arr);
