@@ -21,8 +21,8 @@ console.log(course);
 const last = arr.pop();
 console.log(last);
 // beginning
-const first = arr.shift();
-console.log(first);
+const firstElement = arr.shift();
+console.log(firstElement);
 // middle
 arr.splice(1, 2)
 
@@ -40,3 +40,12 @@ arr.length = 0;
 // while (arr.length > 0)
 //     arr.pop()
 console.log(arr);
+
+// Combining and Slicing Arrays
+const first = [{ id: 1 }]
+const second = [4, 5, 6]
+
+const combine = first.concat(second)
+const slice = combine.slice()
+console.log(combine);
+console.log(slice);
