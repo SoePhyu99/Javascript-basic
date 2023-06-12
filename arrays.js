@@ -157,3 +157,22 @@ function getMax(array) {
         return accumulator;
     }, 0)
 }
+
+// Exercises - Movies
+const movies = [
+    { name: 'a', year: 2018, rating: 4.5 },
+    { name: 'b', year: 2018, rating: 4.7 },
+    { name: 'c', year: 2018, rating: 3 },
+    { name: 'd', year: 2017, rating: 4.5 },
+]
+movies.sort((a, b) => {
+    if (a.rating > b.rating) return -1;
+    if (a.rating < b.rating) return 1;
+    return 0;
+})
+
+for (let e of movies) {
+    if (e.rating > 4 && e.year === 2018) {
+        console.log(e.name);
+    }
+}
