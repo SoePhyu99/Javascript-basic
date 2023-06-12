@@ -37,7 +37,12 @@ console.log(another)
 
 // Exercises
 // Address Object
-const adress = {
+const adress1 = {
+    street: 'RoseMary',
+    city: 'New York',
+    zipCode: 10001
+}
+const adress2 = {
     street: 'RoseMary',
     city: 'New York',
     zipCode: 10001
@@ -58,3 +63,21 @@ function Adress(street, city, zipCode) {
     this.city = city
     this.zipCode = zipCode
 }
+
+// Object Equality
+// are Equal
+function areEqual(adress1, adress2) {
+    for (let key in adress1) {
+        if (adress1[key] !== adress2[key]) {
+            return false;
+        }
+    }
+    return true;
+}
+console.log(areEqual(adress1, adress2));
+
+// are Same
+function areSame(adress1, adress2) {
+    return adress1 === adress2;
+}
+console.log(areSame(adress1, adress2));
