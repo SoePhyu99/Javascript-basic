@@ -34,3 +34,13 @@ let another = {}
 // Object.assign(another, cycle)
 // another = { ...cycle }
 console.log(another)
+
+// Exercises
+
+function Adress(street, city, zipCode) {
+    this.street = street
+    this.city = city
+    this.zipCode = zipCode
+}
+const showAdress = new Adress('RoseMary', 'New York', 10001)
+console.log({ ...showAdress });
