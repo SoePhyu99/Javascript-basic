@@ -100,3 +100,13 @@ const blog = {
     ],
     isLive: true
 }
+
+// Constructor functions
+function Blog(title, body, author) {
+    this.title = title;
+    this.body = body;
+    this.author = author;
+    this.views = 0;
+    this.comments = [];
+    this.isLive = false;
+}
