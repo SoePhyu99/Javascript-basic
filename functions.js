@@ -23,3 +23,30 @@ function sum(...args) {
     return total;
 }
 sum([1, 2, 3, 4, 5])
+
+// Exercises - Area of circle
+const circle = {
+    radius: 1,
+    get area() {
+        return Math.PI * this.radius * this.radius;
+    }
+}
+
+// Exercises - Error Handling
+const nums = [10, 2, 3, 4, 5]
+try {
+    const max = getMax(nums)
+    console.log(max);
+} catch (e) {
+    console.log(e.message);
+}
+
+function getMax(array) {
+    if (!Array.isArray(array)) {
+        throw new Error('Invalid Array!')
+    }
+    return array.reduce((accumulator, current) => {
+        if (current > accumulator) accumulator = current;
+        return accumulator;
+    }, 0)
+}
